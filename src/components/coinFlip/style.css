@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: #eee;
+  background-color: var(--main-bg-color);
 }
 
 .coin-container {
@@ -82,20 +82,20 @@
 }
 
 .flip-button {
-  padding: 15px 40px;
-  font-size: 18px;
-  background: #222;
-  color: gold;
-  border: 2px solid gold;
-  border-radius: 40px;
   cursor: pointer;
-  transition: 0.3s;
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  padding: 12px 24px;
+  font-weight: 700;
+  transition: all .2s;
+  background-color: var(--main-btn-bg);
+  color: #fff;
 }
 
 .flip-button:hover:not(:disabled) {
   transform: scale(1.1);
-  background: gold;
-  color: #222;
+
 }
 
 .flip-button:disabled {

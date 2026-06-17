@@ -1,0 +1,104 @@
+.scene {
+  perspective: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #eee;
+}
+
+.coin-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coin {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.face {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, #fff4ce, #d8a931 70%, #8a6d3b 100%);
+  color: #533800;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+  border: 3px solid #c8a035;
+  box-shadow:
+    inset 0 0 15px rgba(255, 255, 255, 0.6),
+    inset 0 0 30px rgba(0, 0, 0, 0.25),
+    0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.front {
+  transform: translateZ(4px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(4px);
+}
+
+.edge {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  transform-style: preserve-3d;
+}
+
+.edge-strip {
+  position: absolute;
+  width: 10px;
+  height: 8px;
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -4px;
+  background: linear-gradient(to bottom,
+      #8a6d3b 0%,
+      #d8a931 50%,
+      #8a6d3b 100%);
+}
+
+.btn-wrappper {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-button {
+  padding: 15px 40px;
+  font-size: 18px;
+  background: #222;
+  color: gold;
+  border: 2px solid gold;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.flip-button:hover:not(:disabled) {
+  transform: scale(1.1);
+  background: gold;
+  color: #222;
+}
+
+.flip-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

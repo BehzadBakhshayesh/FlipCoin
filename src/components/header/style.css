@@ -1,0 +1,23 @@
+.header-wrapper {
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 2rem;
+  background-color: var(--main-bg-color);
+}
+
+.icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--main-btn-bg);
+  box-shadow:
+    inset -1px 1px 1px rgba(255, 255, 255, 0.05),
+    0 4px 15px rgba(0, 0, 0, 0.2);
+}

@@ -4,7 +4,7 @@ import { useSound } from '@/hooks/useSound';
 import './style.css';
 
 const CoinFlip: React.FC = () => {
-    const play = useSound("/flipCoin/sounds/flipCoin.mp3");
+    const play = useSound("/FlipCoin/sounds/flipCoin.mp3");
     const [isFlipping, setIsFlipping] = useState(false);
     const controls = useAnimation();
 

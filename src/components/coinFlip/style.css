@@ -75,7 +75,7 @@
 
 .btn-wrappper {
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,11 +91,6 @@
   transition: all .2s;
   background-color: var(--main-btn-bg);
   color: #fff;
-}
-
-.flip-button:hover:not(:disabled) {
-  transform: scale(1.1);
-
 }
 
 .flip-button:disabled {

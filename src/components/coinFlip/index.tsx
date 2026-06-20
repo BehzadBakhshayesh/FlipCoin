@@ -52,6 +52,7 @@ const CoinFlip: React.FC = () => {
                     animate={controls}
                     initial={{ y: 0, rotateY: 0 }}
                     className="coin"
+                    onClick={flipCoin}
                 >
                     <div className="edge">
                         {[...Array(40)].map((_, i) => (
